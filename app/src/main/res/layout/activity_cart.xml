@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.CartActivity">
+
+    <!-- Botão de Voltar -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/img_ico_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Imagem do produto -->
+
+            <!-- Nome do produto -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="292dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pocompacto" />
+
+            <!-- Preço do produto -->
+
+            <TextView
+                android:id="@+id/make_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pó compacto luxo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/make_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="R$ 55,00"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/make_name" />
+
+            <!-- Descrição do produto -->
+            <TextView
+                android:id="@+id/make_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Garanta já o seu pó-compacto luxo além de ter um designe belissímo ele preserva sua pele e deixa com um brilho natural!"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/make_price" />
+
+            <!-- Quantidade -->
+            <LinearLayout
+                android:id="@+id/quantity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/make_description">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/decrease_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="-"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="1"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/increase_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="+"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Valor total do pedido -->
+    <TextView
+        android:id="@+id/total_price_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="R$ 55,00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+    <!-- Opções de Pagamento -->
+    <TextView
+        android:id="@+id/payment_methods_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Métodos de Pagamento"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_price_text_view" />
+
+    <RadioGroup
+        android:id="@+id/payment_methods_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_methods_label">
+
+        <RadioButton
+            android:id="@+id/payment_credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Crédito"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/payment_boleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boleto"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/payment_pix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIX"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <!-- Botão de Finalizar Compra -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fund_gradiente_rosa"
+        android:text="Finalizar Compra"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_methods_group" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="47dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_ico_carrinho" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

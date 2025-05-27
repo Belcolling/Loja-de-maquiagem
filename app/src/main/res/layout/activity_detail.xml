@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity.DetailActivity">
+
+    <!-- Layout horizontal para o botão de voltar, ícone de favoritos e ícone de carrinho -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Botão de Voltar -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_ico_voltar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <!-- Layout horizontal para os ícones de favoritos e carrinho -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <!-- Ícone de favorito -->
+            <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/img_ico_favoritos" />
+
+            <!-- Ícone de carrinho de compras -->
+            <ImageView
+                android:id="@+id/img_CarrinhoCompras"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_ico_carrinho" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Imagem do produto -->
+
+    <!-- Nome do produto -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="308dp"
+        android:layout_height="282dp"
+        app:srcCompat="@drawable/sombras" />
+
+    <TextView
+        android:id="@+id/make_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Paleta de sombras"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Preço do produto -->
+    <TextView
+        android:id="@+id/make_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="R$ 80,00"
+        android:textSize="18sp" />
+
+    <!-- Avaliação do produto -->
+    <RatingBar
+        android:id="@+id/shoe_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="4.6"
+        android:stepSize="0.1" />
+
+    <!-- Seleção de tamanho -->
+    <TextView
+        android:id="@+id/size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Selecione as cores"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSizegold"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/button_selector"
+            android:text="Gold"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSizeprata"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/button_selector"
+            android:text="Prata"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSizerose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/button_selector"
+            android:text="Rosé"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <!-- Descrição do produto -->
+
+    <TextView
+        android:id="@+id/make_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:text="Conheça nossa paleta de sombras repleta de cores vivas e brilhosas garantimos que você não vai se arrepender então já garanta há sua!"
+        android:textSize="16sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBuyNow"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/fund_gradiente_rosa"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Comprar agora"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
