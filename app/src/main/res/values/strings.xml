@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">LojaOnlineTenis</string>
+    <string name="finalizar_compra">Finalizar Compra</string>
+    <string name="comprar_agora">Comprar agora</string>
+    <string name="gold">Gold</string>
+    <string name="prata">Prata</string>
+    <string name="ros">Rosé</string>
+    <string name="paleta_de_sombras">Paleta de sombras</string>
+    <string name="r_80_00">R$ 80,00</string>
+    <string name="conhe_a_nossa_paleta_de_sombras_repleta_de_cores_vivas_e_brilhosas_garantimos_que_voc_n_o_vai_se_arrepender_ent_o_j_garanta_h_sua">Conheça nossa paleta de sombras repleta de cores vivas e brilhosas garantimos que você não vai se arrepender então já garanta há sua!</string>
+    <string name="selecione_as_cores">Selecione as cores</string>
+    <string name="boleto">Boleto</string>
+    <string name="garanta_j_o_seu_p_compacto_luxo_al_m_de_ter_um_designe_beliss_mo_ele_preserva_sua_pele_e_deixa_com_um_brilho_natural">Garanta já o seu pó-compacto luxo além de ter um designe belissímo ele preserva sua pele e deixa com um brilho natural!</string>
+    <string name="p_compacto_luxo">Pó compacto luxo</string>
+    <string name="r_55_00">R$ 55,00</string>
+    <string name="cart_o_de_cr_dito">Cartão de Crédito</string>
+    <string name="m_todos_de_pagamento">Métodos de Pagamento</string>
+    <string name="pix">PIX</string>
+    <string name="_1">1</string>
 </resources>

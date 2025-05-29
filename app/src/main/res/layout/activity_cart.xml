@@ -58,7 +58,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Pó compacto luxo"
+                android:text="@string/p_compacto_luxo"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="R$ 55,00"
+                android:text="@string/r_55_00"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Garanta já o seu pó-compacto luxo além de ter um designe belissímo ele preserva sua pele e deixa com um brilho natural!"
+                android:text="@string/garanta_j_o_seu_p_compacto_luxo_al_m_de_ter_um_designe_beliss_mo_ele_preserva_sua_pele_e_deixa_com_um_brilho_natural"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:textSize="18sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -151,7 +151,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Métodos de Pagamento"
+        android:text="@string/m_todos_de_pagamento"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,21 +172,21 @@
             android:id="@+id/payment_credit_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cartão de Crédito"
+            android:text="@string/cart_o_de_cr_dito"
             android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/payment_boleto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Boleto"
+            android:text="@string/boleto"
             android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/payment_pix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PIX"
+            android:text="@string/pix"
             android:textSize="16sp" />
 
     </RadioGroup>
@@ -198,7 +198,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/fund_gradiente_rosa"
-        android:text="Finalizar Compra"
+        android:text="@string/finalizar_compra"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="14sp"

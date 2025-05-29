@@ -3,7 +3,7 @@
     <!-- Estilo quando o botão está selecionado -->
     <item android:state_selected="true">
         <shape android:shape="rectangle">
-            <solid android:color="#FF0000" /> <!-- Cor de fundo vermelha quando selecionado -->
+            <solid android:color="#BE1EC0" /> <!-- Cor de fundo vermelha quando selecionado -->
             <corners android:radius="4dp" />
         </shape>
     </item>
