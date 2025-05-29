@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.projetos.lojaonlinetenis"
+    namespace = "com.projetos.lojaonlinedemaquiagem"
     compileSdk = 35
 
     defaultConfig {

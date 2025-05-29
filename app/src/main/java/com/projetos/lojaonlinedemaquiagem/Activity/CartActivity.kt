@@ -1,13 +1,13 @@
-package com.projetos.lojaonlinetenis.Activity // Declara o pacote onde a classe CartActivity está localizada.
+package com.projetos.lojaonlinedemaquiagem.Activity // Declara o pacote onde a classe CartActivity está localizada.
 
 import android.os.Bundle // Importa a classe Bundle para manipular dados salvos no estado da atividade.
 import android.widget.Toast // Importa a classe Toast para exibir mensagens rápidas na tela.
 import androidx.activity.viewModels // Importa a função viewModels para facilitar a inicialização do ViewModel.
 import androidx.appcompat.app.AppCompatActivity // Importa a classe AppCompatActivity, que é a base para atividades compatíveis com versões antigas do Android.
 import androidx.lifecycle.Observer // Importa a classe Observer para observar mudanças em objetos LiveData.
-import com.projetos.lojaonlinetenis.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
-import com.projetos.lojaonlinetenis.ViewModel.CartViewModel // Importa a classe CartViewModel, que gerencia os dados e a lógica da tela de carrinho.
-import com.projetos.lojaonlinetenis.databinding.ActivityCartBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
+import com.projetos.lojaonlinedemaquiagem.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
+import com.projetos.lojaonlinedemaquiagem.ViewModel.CartViewModel // Importa a classe CartViewModel, que gerencia os dados e a lógica da tela de carrinho.
+import com.projetos.lojaonlinedemaquiagem.databinding.ActivityCartBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
 
 // Classe CartActivity: Representa a tela de carrinho de compras. Herda de AppCompatActivity.
 class CartActivity : AppCompatActivity() {

@@ -1,12 +1,12 @@
-package com.projetos.lojaonlinetenis.Adapter // Declara o pacote onde a classe ImageAdapter está localizada.
+package com.projetos.lojaonlinedemaquiagem.Adapter // Declara o pacote onde a classe ImageAdapter está localizada.
 
 import android.content.Intent // Importa a classe Intent para navegar entre atividades.
 import android.view.LayoutInflater // Importa a classe LayoutInflater para inflar layouts.
 import android.view.ViewGroup // Importa a classe ViewGroup para gerenciar grupos de views.
 import androidx.recyclerview.widget.RecyclerView // Importa a classe RecyclerView para exibir listas de dados.
-import com.projetos.lojaonlinetenis.Activity.DetailActivity // Importa a classe DetailActivity para navegar para a tela de detalhes.
-import com.projetos.lojaonlinetenis.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
-import com.projetos.lojaonlinetenis.databinding.ItemImageBinding // Importa a classe ItemImageBinding para binding de layout.
+import com.projetos.lojaonlinedemaquiagem.Activity.DetailActivity // Importa a classe DetailActivity para navegar para a tela de detalhes.
+import com.projetos.lojaonlinedemaquiagem.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
+import com.projetos.lojaonlinedemaquiagem.databinding.ItemImageBinding // Importa a classe ItemImageBinding para binding de layout.
 
 // Classe ImageAdapter: Adaptador personalizado para o RecyclerView. Gerencia a exibição da lista de imagens.
 class ImageAdapter(private var imageList: List<ImageModel>) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {

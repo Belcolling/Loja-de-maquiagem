@@ -1,9 +1,9 @@
-package com.projetos.lojaonlinetenis.ViewModel // Declara o pacote onde a classe CartViewModel está localizada.
+package com.projetos.lojaonlinedemaquiagem.ViewModel // Declara o pacote onde a classe CartViewModel está localizada.
 
 import androidx.lifecycle.LiveData // Importa a classe LiveData para observar mudanças nos dados.
 import androidx.lifecycle.MutableLiveData // Importa a classe MutableLiveData para atualizar os dados observáveis.
 import androidx.lifecycle.ViewModel // Importa a classe ViewModel, que gerencia os dados da interface.
-import com.projetos.lojaonlinetenis.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
+import com.projetos.lojaonlinedemaquiagem.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
 
 // Classe CartViewModel: Representa o ViewModel para a tela de carrinho. Gerencia os dados e a lógica relacionada ao carrinho.
 class CartViewModel : ViewModel() {

@@ -1,6 +1,6 @@
-package com.projetos.lojaonlinetenis.Model // Declara o pacote onde a classe ImageRepository está localizada.
+package com.projetos.lojaonlinedemaquiagem.Model // Declara o pacote onde a classe ImageRepository está localizada.
 
-import com.projetos.lojaonlinetenis.R // Importa os recursos de drawable do projeto (imagens).
+import com.projetos.lojaonlinedemaquiagem.R // Importa os recursos de drawable do projeto (imagens).
 
 // Classe ImageRepository: Representa o repositório de dados para as imagens e informações dos produtos.
 class ImageRepository {

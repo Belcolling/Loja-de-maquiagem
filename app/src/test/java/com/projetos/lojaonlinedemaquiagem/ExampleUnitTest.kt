@@ -1,4 +1,4 @@
-package com.projetos.lojaonlinetenis
+package com.projetos.lojaonlinedemaquiagem
 
 import org.junit.Test
 

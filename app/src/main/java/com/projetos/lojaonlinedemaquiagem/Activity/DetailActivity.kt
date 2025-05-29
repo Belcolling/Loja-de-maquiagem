@@ -1,4 +1,4 @@
-package com.projetos.lojaonlinetenis.Activity // Declara o pacote onde a classe DetailActivity está localizada.
+package com.projetos.lojaonlinedemaquiagem.Activity // Declara o pacote onde a classe DetailActivity está localizada.
 
 import android.content.Intent // Importa a classe Intent para navegar entre atividades.
 import android.os.Bundle // Importa a classe Bundle para manipular dados salvos no estado da atividade.
@@ -6,9 +6,9 @@ import android.widget.Toast // Importa a classe Toast para exibir mensagens ráp
 import androidx.activity.viewModels // Importa a função viewModels para facilitar a inicialização do ViewModel.
 import androidx.appcompat.app.AppCompatActivity // Importa a classe AppCompatActivity, que é a base para atividades compatíveis com versões antigas do Android.
 import androidx.core.content.ContextCompat // Importa a classe ContextCompat para acessar recursos de forma segura.
-import com.projetos.lojaonlinetenis.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
-import com.projetos.lojaonlinetenis.ViewModel.DetailViewModel // Importa a classe DetailViewModel, que gerencia os dados e a lógica da tela de detalhes.
-import com.projetos.lojaonlinetenis.databinding.ActivityDetailBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
+import com.projetos.lojaonlinedemaquiagem.Model.ImageModel // Importa a classe ImageModel, que representa os dados do produto.
+import com.projetos.lojaonlinedemaquiagem.ViewModel.DetailViewModel // Importa a classe DetailViewModel, que gerencia os dados e a lógica da tela de detalhes.
+import com.projetos.lojaonlinedemaquiagem.databinding.ActivityDetailBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
 
 // Classe DetailActivity: Representa a tela de detalhes do produto. Herda de AppCompatActivity.
 class DetailActivity : AppCompatActivity() {

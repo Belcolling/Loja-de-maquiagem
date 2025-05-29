@@ -1,13 +1,13 @@
-package com.projetos.lojaonlinetenis.Activity // Declara o pacote onde a classe MainActivity está localizada.
+package com.projetos.lojaonlinedemaquiagem.Activity // Declara o pacote onde a classe MainActivity está localizada.
 
 import android.os.Bundle // Importa a classe Bundle para manipular dados salvos no estado da atividade.
 import androidx.activity.viewModels // Importa a função viewModels para facilitar a inicialização do ViewModel.
 import androidx.appcompat.app.AppCompatActivity // Importa a classe AppCompatActivity, que é a base para atividades compatíveis com versões antigas do Android.
 import androidx.lifecycle.Observer // Importa a classe Observer para observar mudanças em objetos LiveData.
 import androidx.recyclerview.widget.GridLayoutManager // Importa a classe GridLayoutManager para organizar itens em uma grade.
-import com.projetos.lojaonlinetenis.Adapter.ImageAdapter // Importa a classe ImageAdapter, que é o adaptador para o RecyclerView.
-import com.projetos.lojaonlinetenis.ViewModel.MainViewModel // Importa a classe MainViewModel, que gerencia os dados e a lógica da tela principal.
-import com.projetos.lojaonlinetenis.databinding.ActivityMainBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
+import com.projetos.lojaonlinedemaquiagem.Adapter.ImageAdapter // Importa a classe ImageAdapter, que é o adaptador para o RecyclerView.
+import com.projetos.lojaonlinedemaquiagem.ViewModel.MainViewModel // Importa a classe MainViewModel, que gerencia os dados e a lógica da tela principal.
+import com.projetos.lojaonlinedemaquiagem.databinding.ActivityMainBinding // Importa a classe gerada pelo ViewBinding para acessar os elementos da interface gráfica.
 
 // Classe MainActivity: Representa a tela principal do aplicativo. Herda de AppCompatActivity.
 class MainActivity : AppCompatActivity() {

@@ -1,11 +1,11 @@
-package com.projetos.lojaonlinetenis.Activity // Pacote onde a classe IntroActivity está localizada
+package com.projetos.lojaonlinedemaquiagem.Activity // Pacote onde a classe IntroActivity está localizada
 
 import android.content.Intent // Importação da classe Intent para iniciar novas atividades
 import android.os.Bundle // Importação da classe Bundle para manipulação de dados entre atividades
 import android.os.Handler // Importação da classe Handler para agendar tarefas
 import android.os.Looper // Importação da classe Looper para o loop de mensagens
 import androidx.appcompat.app.AppCompatActivity // Importação da classe AppCompatActivity para criação de atividades
-import com.projetos.lojaonlinetenis.databinding.ActivityMainBinding // Importação da classe ActivityIntroBinding para binding de layout
+import com.projetos.lojaonlinedemaquiagem.databinding.ActivityMainBinding // Importação da classe ActivityIntroBinding para binding de layout
 
 // Classe IntroActivity: Representa a tela de introdução (splash screen) do aplicativo. Herda de AppCompatActivity.
 class IntroActivity : AppCompatActivity() {

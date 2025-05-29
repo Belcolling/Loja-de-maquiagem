@@ -1,4 +1,4 @@
-package com.projetos.lojaonlinetenis.Model // Pacote onde a classe está localizada
+package com.projetos.lojaonlinedemaquiagem.Model // Pacote onde a classe está localizada
 
 import java.io.Serializable // Importação da interface Serializable para permitir a serialização do objeto
 
